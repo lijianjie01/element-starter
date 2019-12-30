@@ -7,7 +7,12 @@ import Router from 'vue-router'
 import store from './store/index'
 import VueResource from 'vue-resource'
 
+import { post, get } from './utils/api.js'
+
 Vue.use(ElementUI)
+
+Vue.prototype.getRequest = get
+Vue.prototype.postRequest = post
 
 new Vue({
   el: '#app',

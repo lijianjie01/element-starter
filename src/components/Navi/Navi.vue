@@ -40,7 +40,7 @@
                     <div>
                         <div style="border: 1px solid #A6A6A6; border-radius:6px; padding:5px; margin:2px; background-color: white">
                             <el-breadcrumb separator="/">
-                                <el-breadcrumb-item v-for="item in breadcrumbItems">{{item}}</el-breadcrumb-item>
+                                <el-breadcrumb-item v-for="item in breadcrumbItems" :key="item">{{item}}</el-breadcrumb-item>
                             </el-breadcrumb>
                         </div>
                     </div>

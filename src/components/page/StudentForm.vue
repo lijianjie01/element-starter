@@ -25,7 +25,7 @@
                         <el-form-item label="种类" prop="type">
                             <el-select v-model="form.type" clearable filterable placeholder="---请选择---"
                                        style="width:175px">
-                                <el-option v-for="item in studentTypeList" :value="item.typeId"
+                                <el-option v-for="item in studentTypeList" :value="item.typeId" :key="item.typeId"
                                            :label="item.typeName"></el-option>
                             </el-select>
                         </el-form-item>
